@@ -17,7 +17,7 @@ namespace MVC_SalesWeb.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Aplicativo Web MVC de Salles de C#";
+            ViewData["Message"] = "Aplicativo Web MVC de Vendas";
 
 
             return View();
@@ -38,7 +38,7 @@ namespace MVC_SalesWeb.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new MVC_SalesWeb.Models.ViewModels.ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
