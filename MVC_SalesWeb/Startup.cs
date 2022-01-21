@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MVC_SalesWeb.Data;
+using MVC_SalesWeb.Services;
 
 namespace MVC_SalesWeb
 {
@@ -39,6 +40,7 @@ namespace MVC_SalesWeb
                     options.UseMySql(Configuration.GetConnectionString("MVC_SalesWebContext"), builder =>
                         builder.MigrationsAssembly("MVC_SalesWeb")));
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
