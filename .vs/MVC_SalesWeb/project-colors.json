@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "58a34d1d-97da-40b4-acbf-40055078b71b": {
+      "ProjectGuid": "58a34d1d-97da-40b4-acbf-40055078b71b",
+      "DisplayName": "MVC_SalesWeb",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
